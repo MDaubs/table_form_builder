@@ -22,6 +22,12 @@ module TableFormBuilder
       end
     end
 
+		def group(text, &block)
+			@template.content_tag(:tr) do
+				@template.content_tag(:th, text) + @template.content_tag(:td, @template.capture(&block))
+			end
+		end
+
     def title(text)
       @template.content_tag(:tr) do
         @template.content_tag(:th) + @template.content_tag(:td) do
@@ -31,7 +37,7 @@ module TableFormBuilder
     end
 
     def actions(&block)
-      @template.content_tag(:tr) do
+			@template.content_tag(:tr) do
         @template.content_tag(:th) + @template.content_tag(:td, @template.capture(&block))
       end
     end
