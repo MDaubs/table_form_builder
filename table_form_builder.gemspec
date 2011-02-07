@@ -5,18 +5,27 @@
 
 Gem::Specification.new do |s|
   s.name = %q{table_form_builder}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matthew Daubert"]
   s.date = %q{2011-02-06}
   s.email = %q{mdaubert@gmail.com}
   s.extra_rdoc_files = [
-    "README"
+    "README.md"
   ]
   s.files = [
-    "README",
-    "VERSION"
+    "README.md",
+    "Rakefile",
+    "VERSION",
+    "init.rb",
+    "install.rb",
+    "lib/table_form_builder.rb",
+    "lib/table_form_builder/application_helper.rb",
+    "lib/table_form_builder/builder.rb",
+    "rails/init.rb",
+    "table_form_builder.gemspec",
+    "uninstall.rb"
   ]
   s.homepage = %q{http://github.com/MDaubs/table_form_builder}
   s.require_paths = ["lib"]
